@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aphore</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+   <link href="https://fonts.googleapis.com/css?family=Akronim|Gochi+Hand|Permanent+Marker" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="login">
+  <div class="login_1">
+    <div class="close">+</div>
+    <img src="img/logo_aphore.png" style="margin-bottom: 30px;">
+    <form>
+        <input type="text" name = "email" placeholder="E-Mail">
+        <input type="password" name = "senha" placeholder="Senha">
+        <button type="submit" style="width: 30%;">Entrar</button><br>
+    </form>
+  </div>
+</div>
+    
+    <div id="wrapper">
+      <div id="lado_esquerdo">
+        <div id="cadastro">
+          <div class="logo">
+              <h1><img src="img/logo_aphore.png"style="width: 45px; height: 45px; margin-top: 20px;"/>Aphore</h1>
+          </div>
+          <form>
+              
+              <div>
+              <input type="name" placeholder="Seu Nome Completo"/>
+            </div>
+              
+            <div>
+              <input type="email" placeholder="Seu Email"/>
+            </div>
+              
+              <div>
+              <input type="number" placeholder="Seu RA"/>
+            </div>
+            <div>
+              <input type="password" placeholder="Sua Senha"/>
+            </div>
+            <button type="submit">Cadastre-se</button>
+          </form>
+          <div class="links">
+            <a href="#" id="login">Já tem uma conta?</a>
+          </div>
+        </div>
+
+      </div>
+      <div id="lado_direito">
+        <div id="showcase">
+          <div class="showcase-content">
+            <h1 class="showcase-text">
+              <strong>Aphore</strong>, um projeto FMM!
+            </h1>
+            <a href="#" class="btn">Mais sobre!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" >
+  document.getElementById('login').addEventListener('click', function(){
+    document.querySelector('.login').style.display = 'flex';
+  })
+
+  document.querySelector('.close').addEventListener("click", function() {
+document.querySelector('.login').style.display = "none";
+});
+
+</script>
+
+</body>
+</html>
